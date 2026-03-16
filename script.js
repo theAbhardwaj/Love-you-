@@ -40,7 +40,7 @@ function nextStep(id) {
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 let noCount = 0;
-const noTexts = ["No? ", "Are you sure?", "Please? ", "Don't do this!", "Think again!", "Heartbreaker! "];
+const noTexts = ["No? 😢", "Are you sure?", "Please? 🥺", "Don't do this!", "Think again!", "Heartbreaker! 💔"];
 
 function dodgeBtn(e) {
   if (e.type === "touchstart") e.preventDefault();
@@ -81,7 +81,7 @@ function acceptLove() {
 
 // Background
 function createFloatingEmoji(isInstant = false) {
-  const emojis = ["❤️", "", "", "", "✨", "", "", ""];
+  const emojis = ["❤️", "💖", "💕", "🌹", "✨", "🥰", "💌", "😍"];
   const el = document.createElement("div");
   el.innerText = emojis[Math.floor(Math.random() * emojis.length)];
   el.classList.add("floating-emoji");
